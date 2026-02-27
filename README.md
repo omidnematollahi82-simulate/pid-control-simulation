@@ -3,13 +3,25 @@
 This project simulates a 1-DOF mass-spring-damper system and compares **P**, **PD**, and **PID** controllers for tracking a constant position reference.
 
 ## System Model
-The plant is modeled as:
+## System Model
 
-\[
-m \ddot{x} + c \dot{x} + k x = u(t)
-\]
+The system is modeled as a 1-DOF mass–spring–damper:
 
-The controllers are applied in a tracking form with error \( e(t) = x_d - x(t) \).
+`m x''(t) + c x'(t) + k x(t) = u(t)`
+
+Where:
+- m: mass
+- c: damping coefficient
+- k: spring stiffness
+- x(t): displacement
+- u(t): control input
+
+The controllers are applied in a tracking form with error 
+
+## Error Definition
+
+e(t) = x_d - x(t)
+de/dt = -x'(t)
 
 ## Controllers
 
