@@ -3,7 +3,6 @@
 This project simulates a 1-DOF mass-spring-damper system and compares **P**, **PD**, and **PID** controllers for tracking a constant position reference.
 
 ## System Model
-## System Model
 
 The system is modeled as a 1-DOF mass–spring–damper:
 
