@@ -12,9 +12,10 @@ m \ddot{x} + c \dot{x} + k x = u(t)
 The controllers are applied in a tracking form with error \( e(t) = x_d - x(t) \).
 
 ## Controllers
-- **P:**   \( u = K_p e \)
-- **PD:**  \( u = K_p e + K_d \dot{e} \)
-- **PID:** \( u = K_p e + K_d \dot{e} + K_i \int e \, dt \)
+
+- P:   u(t) = Kp e(t)
+- PD:  u(t) = Kp e(t) + Kd (de/dt)
+- PID: u(t) = Kp e(t) + Kd (de/dt) + Ki ∫₀ᵗ e(τ) dτ
 
 ## Features
 - Numerical integration using 
